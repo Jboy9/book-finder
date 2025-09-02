@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "book-finder",
+    "name": "Book Finder",
     "slug": "book-finder",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.h.i.m.bookfinder"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7e9b28a4-8b8c-4432-98ef-fa7955cb3931"
+      }
     }
   }
 }
