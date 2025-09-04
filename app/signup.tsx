@@ -262,6 +262,6 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   scrollContainer: {
-    paddingBottom: 60
+    paddingBottom: 100
   }
 })
