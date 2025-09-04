@@ -114,17 +114,17 @@ const styles = StyleSheet.create({
     paddingTop: 40,
     paddingHorizontal: 20
   },
-  input: {
+   input: {
     // paddingHorizontal: 4,
-    padding: 4,
-    gap: 230,
-    alignSelf: 'center',
-    width: 337,
-    height: 48,
+    paddingHorizontal: 10,
+    // alignSelf: 'center',
+    // width: 337,
+    // height: 48,
+    paddingVertical: 12,
     backgroundColor: '#EDEDED',
     borderRadius: 25,
     color: '#928C8C',
-    textAlign: 'center',
+    // textAlign: 'center',
     marginTop: 20
   },
   logintText: {
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   iconButton: {
     position: 'absolute',
     right: 18,
-    top: 13,
+    top: 20,
     padding: 4,
     zIndex: 1,
   },

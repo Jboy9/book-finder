@@ -2,7 +2,7 @@
 
 import { useLocalSearchParams } from "expo-router";
 import React, { useState } from "react";
-import { Button, Image, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import WebView from "react-native-webview";
 
 export default function BookDetails() {
@@ -40,7 +40,9 @@ export default function BookDetails() {
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.author}>by {author}</Text>
       {pdf ? (
-        <Button title="📖 Read Full Book" onPress={() => setShowRead(true)} />
+        <TouchableOpacity onPress={() => setShowRead(true)} style={styles.fullBookButton}>
+          <Text style={styles.fullBookText}>📖 Read Full Book</Text>
+        </TouchableOpacity>
       ) : (
         <Text>No readable version available.</Text>
       )}
@@ -57,6 +59,22 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     resizeMode: "cover",
   },
-  title: { fontSize: 24, fontWeight: "bold", marginBottom: 6 },
-  author: { fontSize: 16, color: "#666", marginBottom: 12 },
+  title: { 
+    fontSize: 24, 
+    fontWeight: "bold", 
+    marginBottom: 6 
+  },
+  author: { 
+    fontSize: 16, 
+    color: "#666", 
+    marginBottom: 12 
+  },
+  fullBookButton:{
+    backgroundColor: '#1B3E52',
+    padding: 12,
+    borderRadius: 8,
+  },
+  fullBookText:{
+    textAlign: "center"
+  }
 });

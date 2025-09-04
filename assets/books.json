@@ -34,9 +34,225 @@
   {
     "id": 5,
     "title": "The Whistling Man",
-    "author": "Written by: Magda Swartz",
+    "author": " Magda Swartz",
     "image": "https://freekidsbooks.org/wp-content/uploads/2025/06/2505-The_Whistlig_Man-NSB-FKB-Cover-768x768.jpg",
     "pdf": "https://freekidsbooks.org/wp-content/uploads/2025/06/2505-The_Whistlig_Man-NSB-FKB.pdf"
-  }
+  },
+
   
+  {
+    "id": 6,
+    "title": "Swimming in the Zambezi",
+    "author": " Imelda Lyamine",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2025/08/2508-Swimming_in_the_Zambezi-NSB-FKB-768x885.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2025/08/2508-Swimming_in_the_Zambezi-NSB-FKB-1.pdf"
+  },
+   
+  
+  {
+    "id": 7,
+    "title": "The Secret Life of Things",
+    "author": " Gabriel RosenStock and Odilon Redon",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/11/2211-The-Secret-Life-Of-Things-2.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/11/2211-The_Secret_Life_of_Things-FKB.pdf"
+  },
+
+  
+  {
+    "id": 8,
+    "title": "Music Theory for Musicians and Normal People – Fundamentals (Book 1)",
+    "author": "Toby Rush",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/10/Rush-Music-Fundamentals-Cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/10/Rush-Music-Theory-fundamentals-set-FKB.pdf"
+  },
+  
+  
+  {
+    "id": 9,
+    "title": "Tania’s Midnight Adventure",
+    "author": "Kanika G",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/07/tania-midnight-cover-scaled.jpg",
+    "pdf": "http://freekidsbooks.org/wp-content/uploads/2022/07/Tanias-Midnight-Adventure-Kanika-G.pdf"
+  },
+  
+  
+  {
+    "id": 10,
+    "title": "Doggie’s Last Day",
+    "author": "Nigel Toeg",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2023/11/2311-Doggies_Last_Day-FKB.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2023/11/2311-Doggies_Last_Day-FKB.pdf"
+  },
+
+  
+  {
+    "id": 11,
+    "title": "Bulli and the Tiger",
+    "author": " Shalini Reys",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2023/09/2309-bulli-and-the-tiger-FKB.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2023/09/2309-bulli-and-the-tiger-FKB.pdf"
+  },
+
+  
+  
+  {
+    "id": 12,
+    "title": "Billy Boy Comes Home ",
+    "author": " Terry Greenwell",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2023/01/BillyBoy-Part2-Cover-Temp-1.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2023/01/Billy-Boy-comes-home-final-FKB.pdf"
+  },
+
+    
+  {
+    "id": 13,
+    "title": "Sahil and Samira ",
+    "author": " Neha John",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/08/Sahil-and-Samira-Cover.png",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/08/Sahil-and-Samira.pdf"
+  },
+
+
+    {
+    "id": 14,
+    "title": "Esoteric Eric ",
+    "author": "Terry Greenwell",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/07/Esoteric-Eric.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/07/WFQ-FKB.pdf"
+  },
+
+      {
+    "id": 15,
+    "title": "“What’s That All About Then?”",
+    "author": "Terry Greenwell",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/05/whats-that-all-about-poetry-scaled.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/05/whats-that-all-about-then-poetry-FKB.pdf"
+  },
+
+  
+      {
+    "id": 16,
+    "title": "Tania Tells a Story",
+    "author": "Kanika G",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2022/02/Tania-Tells-a-Story-cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2022/03/Tania-Tells-A-Story-Kanika-G-vs-2-FKB.pdf"
+  },
+
+  
+  
+      {
+    "id": 17,
+    "title": "Henry – The Goose Who Got To Love",
+    "author": "Amadeus Vultznick",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2021/08/Henry.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2021/08/henry-the-goose-who-got-to-love.pdf"
+  },
+
+  
+      {
+    "id": 18,
+    "title": "The Secrets of Chocolate",
+    "author": "Kinara Goyal",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2021/02/Secrets-of-chocolate-cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2021/02/Secrets-of-Chocolate-Kinara-Goyal.pdf"
+  },
+   
+  
+   {
+    "id": 19,
+    "title": "Jack Ferrington and the School for Swabbies",
+    "author": "Clint Perry",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2020/05/Jack_Farrington.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2020/05/Jack-Ferrington-and-the-School-for-Swabbies.pdf"
+  },
+
+  {
+    "id": 20,
+    "title": "Matchbox Dreams",
+    "author": "Douglas Schwartz",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2020/05/Screenshot-2020-05-01-11.02.10.png",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2021/07/Matchbox-Dreams-Paperback_Final_FKB.pdf"
+  },
+
+   {
+    "id": 21,
+    "title": "Roy The Rat and his Six Thinking Hats",
+    "author": " Angeliki Voreopoulou",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2019/11/roytheratandhissixthinkinghats.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/11/FKB-Stories-RoytheRatandhisSixThinkingHats.pdf"
+  },
+
+  {
+    "id": 22,
+    "title": "Be Wise With Money – Early financial literacy",
+    "author": " Mala Kumar",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2019/10/Be_Wise_With_Money-pratham-FKB-cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/10/be-wise-with-money-Pratham-FKB.pdf"
+  },
+
+    {
+    "id": 23,
+    "title": "Thunderbolt Kids",
+    "author": " Siyavula",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2019/08/Science_Comic_Book_Grade_6-Siyavula-FKB-Cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/08/ScienceAdventuresGrade6_comic-Siyavula-FKB.pdf"
+  },
+
+   {
+    "id": 24,
+    "title": "The Night the Tooth-fairy Didn’t Come",
+    "author": "Susha Golomb",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2019/08/The_night_the_tooth-fairy_didnt_come.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/08/the-night-the-tooth-fairy-didnt-come-how-bea-and-chum-saved-FKB.pdf"
+  },
+
+    {
+    "id": 25,
+    "title": "Muggles’ Guide to Harry Potter – Study Guide for Book Projects",
+    "author": "WikiBooks",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2018/09/Muggles-guide-to-harry-potter-cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2020/01/FKB-Stories-Muggles_Guide_Harry_Potter_wiki.pdf"
+  },
+
+   {
+    "id": 26,
+    "title": "Sam Dragon",
+    "author": "Stephen Corcoran",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2018/09/Sam-Dragon-early-to-MG-FKB-Cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2020/01/FKB-Stories-Sam-Dragon-FKB.pdf"
+  },
+
+  {
+    "id": 27,
+    "title": "Black Beauty",
+    "author": "Anna Sewell",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2018/08/Black_Stallion.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2018/08/Black_Stallion.jpg"
+  },
+
+  {
+    "id": 28,
+    "title": "The Little Alien",
+    "author": "Joe Corcoran",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2018/03/The-Little-Alien-Middle-Grade-Science-Fiction-Cover-e1523436086859.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2018/03/The-Little-Alien-Middle-Grade-Science-Fiction-Cover-e1523436086859.jpg"
+  },
+
+  
+  {
+    "id": 29,
+    "title": "Bronia and the Bowls of Soup – A Holocaust Survivor Tale",
+    "author": "Aaron Zehrah",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2019/01/Bronia-and-the-Bowls-of-Soup-Cover-FKB.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/01/Bronia-and-the-Bowls-of-Soup-FKB.pdf"
+  },
+
+  {
+    "id": 30,
+    "title": "Bad Brad Saves Christmas",
+    "author": "Joe Corcoran",
+    "image": "https://freekidsbooks.org/wp-content/uploads/2016/12/Brad-Saves-Christmas-FKB-Cover.jpg",
+    "pdf": "https://freekidsbooks.org/wp-content/uploads/2019/12/FKB-Stories-Brad-Saves-Christmas.pdf"
+  }
 ]
+

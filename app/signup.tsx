@@ -1,19 +1,19 @@
 import { Ionicons } from '@expo/vector-icons'
 import { useRouter } from 'expo-router'
 import React, { useState } from 'react'
-import { Alert, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 
 const signup = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-    const [confirmpassword, setConfirmPassword] = useState('');
-    const [showPassword, setShowPassword] = useState(false);
+  const [confirmpassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-const router = useRouter()
+  const router = useRouter()
 
-const handleSignup = () => {
+  const handleSignup = () => {
     if (!email || !password || !confirmpassword || !firstName || !lastName) {
       Alert.alert('Missing Fields', 'Please fill in all fields.');
       return;
@@ -28,9 +28,9 @@ const handleSignup = () => {
       Alert.alert('Password Mismatch', 'Passwords do not match.');
       return;
     }
-    
+
     // Proceed with signup logic
-   
+
     router.push('/homeScreen');
   };
 
@@ -38,109 +38,111 @@ const handleSignup = () => {
 
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.inputText}> Email </Text>
+        {/* <Text style={styles.inputText}> Email </Text>
        <Text style={styles.inputText}> Password </Text> 
        <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}> Login </Text>
+       <Text style={styles.buttonText}> Login </Text>
        </TouchableOpacity> */}
 
-      <View style={styles.imageContainer}>
-        <Image source={require('../assets/images/profile-icon.png')} />
-        <Text style={styles.logintText}> sign up</Text>
-      </View>
+        <View style={styles.imageContainer}>
+          <Image source={require('../assets/images/profile-icon.png')} />
+          <Text style={styles.logintText}> sign up</Text>
+        </View>
+       <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
 
-      <View style={styles.inputContainer}>
-      <TextInput 
-         placeholder='First Name'
-         keyboardType= 'default'
-         style={styles.input}
-         value={firstName} 
-         onChangeText={setFirstName}
-         />
-
-          <TextInput 
-         placeholder='Last Name'
-         keyboardType= 'default'
-         style={styles.input}
-         value={lastName} 
-         onChangeText={setLastName}
-         />
-        <TextInput
-          placeholder='Email'
-          keyboardType='email-address'
-          style={styles.input}
-          value={email}
-          onChangeText={setEmail}
-        />
-
-       <View style={styles.inputWrapper}>
+        <View style={styles.inputContainer}>
           <TextInput
-            placeholder="Password"
-            keyboardType="default"
-            secureTextEntry={!showPassword}
+            placeholder='First Name'
+            keyboardType='default'
             style={styles.input}
-            value={password}
-            onChangeText={setPassword}
-            placeholderTextColor="#888"
+            value={firstName}
+            onChangeText={setFirstName}
           />
-          <TouchableOpacity
-            style={styles.iconButton}
-            onPress={() => setShowPassword((prev) => !prev)}
-            activeOpacity={0.7}
-          >
-            <Ionicons
-              name={showPassword ? 'eye-off' : 'eye'}
-              size={22}
-              color="#4F58FF"
-            />
-          </TouchableOpacity>
-        </View>
-        <View style={styles.inputWrapper}>
+
           <TextInput
-            placeholder="Confirm Password"
-            keyboardType="default"
-            secureTextEntry={!showConfirmPassword}
+            placeholder='Last Name'
+            keyboardType='default'
             style={styles.input}
-            value={confirmpassword}
-            onChangeText={setConfirmPassword}
-            placeholderTextColor="#888"
+            value={lastName}
+            onChangeText={setLastName}
           />
-          <TouchableOpacity
-            style={styles.iconButton}
-            onPress={() => setShowConfirmPassword((prev) => !prev)}
-            activeOpacity={0.7}
-          >
-            <Ionicons
-              name={showConfirmPassword ? 'eye-off' : 'eye'}
-              size={22}
-              color="#4F58FF"
+          <TextInput
+            placeholder='Email'
+            keyboardType='email-address'
+            style={styles.input}
+            value={email}
+            onChangeText={setEmail}
+          />
+
+          <View style={styles.inputWrapper}>
+            <TextInput
+              placeholder="Password"
+              keyboardType="default"
+              secureTextEntry={!showPassword}
+              style={styles.input}
+              value={password}
+              onChangeText={setPassword}
+              placeholderTextColor="#888"
             />
-          </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.iconButton}
+              onPress={() => setShowPassword((prev) => !prev)}
+              activeOpacity={0.7}
+            >
+              <Ionicons
+                name={showPassword ? 'eye-off' : 'eye'}
+                size={22}
+                color="#4F58FF"
+              />
+            </TouchableOpacity>
+          </View>
+          <View style={styles.inputWrapper}>
+            <TextInput
+              placeholder="Confirm Password"
+              keyboardType="default"
+              secureTextEntry={!showConfirmPassword}
+              style={styles.input}
+              value={confirmpassword}
+              onChangeText={setConfirmPassword}
+              placeholderTextColor="#888"
+            />
+            <TouchableOpacity
+              style={styles.iconButton}
+              onPress={() => setShowConfirmPassword((prev) => !prev)}
+              activeOpacity={0.7}
+            >
+              <Ionicons
+                name={showConfirmPassword ? 'eye-off' : 'eye'}
+                size={22}
+                color="#4F58FF"
+              />
+            </TouchableOpacity>
+          </View>
+
+          {/* Already have an account and forgot password */}
+
+          <View style={styles.forgotPasswordContainer}>
+            <Text style={styles.alreadyHaveAccount} >Already have an account? <Text onPress={() => router.push('/')}>Login</Text></Text>
+            {/* <Text style={styles.forgotPassword}>Forgot Password?</Text>  */}
+          </View>
         </View>
 
-        {/* Already have an account and forgot password */}
+        {/* The OR and the underline */}
+        <View style={styles.underlineContainer}>
 
-        <View style={styles.forgotPasswordContainer}>
-          <Text style={styles.alreadyHaveAccount} >Already have an account? <Text onPress={()=> router.push('/')}>Login</Text></Text>
-          {/* <Text style={styles.forgotPassword}>Forgot Password?</Text>  */}
+          <View style={styles.line} />
+          <Text>OR</Text>
+          <View style={styles.line} />
+
         </View>
-      </View>
 
-      {/* The OR and the underline */}
-      <View style={styles.underlineContainer}>
-
-        <View style={styles.line} />
-        <Text>OR</Text>
-        <View style={styles.line} />
-
-      </View>
-
-      {/* Other login method */}
-      <View style={styles.loginMethodContainer}>        
-                <Image source={require('../assets/images/google-icon.png')} />
-                <Image source={require('../assets/images/facebook-icon.png')} />
-                <Image source={require('../assets/images/linkedin-icon.png')} />
-      </View>
+        {/* Other login method */}
+        <View style={styles.loginMethodContainer}>
+          <Image source={require('../assets/images/google-icon.png')} />
+          <Image source={require('../assets/images/facebook-icon.png')} />
+          <Image source={require('../assets/images/linkedin-icon.png')} />
+        </View>
+      </ScrollView>
 
       {/* Login button */}
 
@@ -162,15 +164,15 @@ const styles = StyleSheet.create({
   },
   input: {
     // paddingHorizontal: 4,
-    padding: 4,
-    gap: 230,
-    alignSelf: 'center',
-    width: 337,
-    height: 48,
+    paddingHorizontal: 10,
+    // alignSelf: 'center',
+    // width: 337,
+    // height: 48,
+    paddingVertical: 12,
     backgroundColor: '#EDEDED',
     borderRadius: 25,
     color: '#928C8C',
-    textAlign: 'center',
+    // textAlign: 'center',
     marginTop: 20
   },
   logintText: {
@@ -253,8 +255,11 @@ const styles = StyleSheet.create({
   iconButton: {
     position: 'absolute',
     right: 18,
-    top: 13,
+    top: 20,
     padding: 4,
     zIndex: 1,
   },
+  scrollContainer: {
+    paddingBottom: 60
+  }
 })

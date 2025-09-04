@@ -106,8 +106,16 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: "#f7f7f7" },
-  header: { fontSize: 26, fontWeight: "bold", marginBottom: 10 },
+  container: { 
+    flex: 1, 
+    padding: 16, 
+    backgroundColor: "#f7f7f7" 
+  },
+  header: { 
+    fontSize: 26, 
+    fontWeight: "bold", 
+    marginBottom: 10 
+  },
   input: {
     borderWidth: 1,
     borderColor: "#ccc",
@@ -116,16 +124,39 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     backgroundColor: "#fff",
   },
-  section: { marginBottom: 24 },
-  sectionTitle: { fontSize: 20, fontWeight: "600", marginBottom: 8 },
-  card: { width: 120, marginRight: 12 },
-  image: { width: 120, height: 160, borderRadius: 6, marginBottom: 6 },
+  section: { 
+    marginBottom: 24 
+  },
+  sectionTitle: { 
+    fontSize: 20, 
+    fontWeight: "600", 
+    marginBottom: 8 
+  },
+  card: { 
+    width: 120, 
+    marginRight: 12 
+  },
+  image: { 
+    width: 120, 
+    height: 160, 
+    borderRadius: 6, 
+    marginBottom: 6 
+  },
   placeholder: {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#ddd",
   },
-  title: { fontSize: 14, fontWeight: "bold" },
-  author: { fontSize: 12, color: "#555" },
-  message: { textAlign: "center", marginTop: 20 },
+  title: { 
+    fontSize: 14, 
+    fontWeight: "bold" 
+  },
+  author: { 
+    fontSize: 12, 
+    color: "#555" 
+  },
+  message: { 
+    textAlign: "center", 
+    marginTop: 20 
+  },
 });
