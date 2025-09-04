@@ -48,7 +48,7 @@ const signup = () => {
           <Image source={require('../assets/images/profile-icon.png')} />
           <Text style={styles.logintText}> sign up</Text>
         </View>
-       <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
+       <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
 
         <View style={styles.inputContainer}>
           <TextInput

@@ -7,6 +7,7 @@ import {
   BackHandler,
   FlatList,
   Image,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -24,8 +25,10 @@ export default function HomeScreen() {
 
   useEffect(() => {
     loadBooks();
+  }, []);
 
-    const handleBack = () =>{
+  useEffect(()=>{
+const handleBack = () =>{
       BackHandler.exitApp();
       return true;
     };
@@ -34,7 +37,14 @@ export default function HomeScreen() {
     const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBack);
 
     return backHandler.remove();
-  }, []);
+  }, [])
+
+  useEffect(()=>{
+    if(query.trim()=== ""){
+      loadBooks();
+      setNoResult(false)
+    }
+  }, [query])
 
   const loadBooks = () => {
     setLoading(true);
@@ -48,10 +58,7 @@ export default function HomeScreen() {
   };
 
   const searchBooks = () => {
-    if (!query.trim()) {
-loadBooks();  //This will return to home when input is empty
-return;
-    } 
+    if (!query.trim()) return;
     setLoading(true);
     const results = booksData.filter((b) =>
       b.title.toLowerCase().includes(query.toLowerCase())
@@ -102,6 +109,7 @@ return;
       {loading && <ActivityIndicator size="large" style={{ margin: 20 }} />}
       {noResult && <Text style={styles.message}>❌ Book not available</Text>}
 
+<ScrollView  contentContainerStyle={styles.scrollContainer}>
       {!loading &&
         !noResult &&
         Object.entries(booksBySection).map(([title, books]) => (
@@ -116,6 +124,7 @@ return;
             />
           </View>
         ))}
+        </ScrollView>
     </View>
   );
 }
