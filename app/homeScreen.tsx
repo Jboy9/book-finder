@@ -4,6 +4,7 @@ import { useRouter } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
   ActivityIndicator,
+  BackHandler,
   FlatList,
   Image,
   StyleSheet,
@@ -23,6 +24,16 @@ export default function HomeScreen() {
 
   useEffect(() => {
     loadBooks();
+
+    const handleBack = () =>{
+      BackHandler.exitApp();
+      return true;
+    };
+
+    // This will exit the app once the back button is pressed on the home screnn
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBack);
+
+    return backHandler.remove();
   }, []);
 
   const loadBooks = () => {
@@ -37,7 +48,10 @@ export default function HomeScreen() {
   };
 
   const searchBooks = () => {
-    if (!query.trim()) return;
+    if (!query.trim()) {
+loadBooks();  //This will return to home when input is empty
+return;
+    } 
     setLoading(true);
     const results = booksData.filter((b) =>
       b.title.toLowerCase().includes(query.toLowerCase())
@@ -98,6 +112,7 @@ export default function HomeScreen() {
               data={books}
               keyExtractor={(item) => item.id.toString()}
               renderItem={({ item }) => bookCard(item)}
+              contentContainerStyle={styles.scrollContainer}
             />
           </View>
         ))}
@@ -157,6 +172,9 @@ const styles = StyleSheet.create({
   },
   message: { 
     textAlign: "center", 
-    marginTop: 20 
+    marginTop: 20 ,
   },
+  scrollContainer: {
+    paddingBottom: 60
+  }
 });

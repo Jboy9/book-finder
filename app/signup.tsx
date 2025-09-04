@@ -142,13 +142,15 @@ const signup = () => {
           <Image source={require('../assets/images/facebook-icon.png')} />
           <Image source={require('../assets/images/linkedin-icon.png')} />
         </View>
-      </ScrollView>
 
+        
       {/* Login button */}
 
       <TouchableOpacity style={styles.button} onPress={handleSignup}>
         <Text style={styles.buttonText}> Sign Up</Text>
       </TouchableOpacity>
+      </ScrollView>
+
     </View>
   )
 }

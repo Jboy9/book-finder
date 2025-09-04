@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   fullBookText:{
-    textAlign: "center"
+    textAlign: "center",
+    color: "#FFFFFF"
   }
 });
